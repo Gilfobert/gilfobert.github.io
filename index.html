@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Персональный сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        header {
+            background: #50a8a0;
+            color: white;
+            padding: 10px 0;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            padding: 20px 0;
+            background: #333;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #bio img {
+            width: 200px;
+            float: left;
+            margin-right: 10px;
+        }
+        #bio:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать на мой персональный сайт!</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#bio">Биография</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="bio" class="container">
+        <img src="URL вашей фотографии" alt="Ваше имя">
+        <p>Ваша биография</p>
+    </div>
+    <div id="contact" class="container">
+        <h2>Обратная связь</h2>
+        <form action="mailto:ваш email" method="post" enctype="text/plain">
+            Имя:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Комментарий:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Социальные сети:</p>
+            <a href="URL вашего Facebook">Facebook</a> |
+            <a href="URL вашего Twitter">Twitter</a> |
+            <a href="URL вашего LinkedIn">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
