@@ -41,23 +41,23 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 15px;
-            background-color: white;
+            margin-bottom: 8px;
+            background-color: #d1edff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            padding: 10px;
+            padding: 5px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #e8f3fa;
         }
         td img {
             width: 160px;
             height: 160px;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 5px;
         }
         #bio img {
             width: 200px;
