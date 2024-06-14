@@ -41,6 +41,28 @@
             color: white;
             text-decoration: none;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +96,54 @@
 
 <div class="container">
 https://railgallery.pp.ua/profile/178/
+
+<h1>Мої проекти</h1>
+
+<table>
+    <tr>
+        <th>-</th>
+        <th>Опис проекту</th>
+    </tr>
+    <tr>
+        <td><img src="screenshot1.jpg" alt="Screenshot 1"></td>
+        <td>
+            <h3>Project 1</h3>
+            <p>This is a description of the first project. It includes details about the project's purpose, features, and technologies used.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="screenshot2.jpg" alt="Screenshot 2"></td>
+        <td>
+            <h3>Project 2</h3>
+            <p>This is a description of the second project. It highlights the key aspects and achievements of the project.</p>
+        </td>
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
+
+<h1>Проекти, у яких я беру участь</h1>
+
+<table>
+    <tr>
+        <th>-</th>
+        <th>Опис проекту</th>
+    </tr>
+    <tr>
+        <td><img src="screenshot1.jpg" alt="Screenshot 1"></td>
+        <td>
+            <h3>Project 1</h3>
+            <p>This is a description of the first project. It includes details about the project's purpose, features, and technologies used.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="screenshot2.jpg" alt="Screenshot 2"></td>
+        <td>
+            <h3>Project 2</h3>
+            <p>This is a description of the second project. It highlights the key aspects and achievements of the project.</p>
+        </td>
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
 </div>
 
 
