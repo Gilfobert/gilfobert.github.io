@@ -69,11 +69,27 @@
         </div>
     </header>
     <nav>
-        <div class="container">
+        <!--<div class="container">
             <ul>
                 <li><a href="/">Головна</a></li>
                 <li><a href="/about.html">Зворотний зв'язок</a></li>
             </ul>
+-->
+   <div id="menu" style="background-color: #f4f4f4; padding: 10px;"></div>
+    
+    <script>
+        async function loadMenu() {
+            try {
+                const response = await fetch('menu.html');
+                if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+                const html = await response.text();
+                document.getElementById('menu').innerHTML = html;
+            } catch (error) {
+                document.getElementById('menu').innerText = 'Error loading menu: ' + error.message;
+            }
+        }
+        window.onload = loadMenu;
+    </script>
         </div>
     </nav>
     <div id="bio" class="container">
