@@ -46,7 +46,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            padding: 5px;
+            padding: 3px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
@@ -54,10 +54,10 @@
             background-color: #e8f3fa;
         }
         td img {
-            width: 160px;
-            height: 160px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         #bio img {
             width: 200px;
