@@ -51,12 +51,25 @@
         </div>
     </header>
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="/">Головна</a></li>
-                <li><a href="/about.html">Зворотний зв'язок</a></li>
-            </ul>
-        </div>
+       <!--Меню-->
+    <div class="container">
+        <div id="menu"></div>
+    </div>
+
+    <script>
+        async function loadMenu() {
+            try {
+                const response = await fetch('menu.html');
+                if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+                const html = await response.text();
+                document.getElementById('menu').innerHTML = html;
+            } catch (error) {
+                document.getElementById('menu').innerText = 'Error loading menu: ' + error.message;
+            }
+        }
+        window.onload = loadMenu;
+    </script>
+<!--Меню-->
     </nav>
     <div id="contact" class="container">
         <h2>Зворотний зв'язок</h2>
