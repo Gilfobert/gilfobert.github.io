@@ -76,5 +76,13 @@
             width: 300px;
             height: 200px;
             align-content: space-between;
+        }
+        h3 a {
+            color: inherit; /* Цвет ссылки такой же, как у текста */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
 
+        h3 a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
 
