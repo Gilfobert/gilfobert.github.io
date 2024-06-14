@@ -70,8 +70,11 @@
     </header>
     <nav>
 <!--Меню-->
-<div id="menu" padding: 5px;"></div>
-    <div class="container"><script>
+    <div class="container">
+        <div id="menu"></div>
+    </div>
+
+    <script>
         async function loadMenu() {
             try {
                 const response = await fetch('menu.html');
@@ -84,7 +87,6 @@
         }
         window.onload = loadMenu;
     </script>
-    </div>
 <!--Меню-->
     </nav>
     <div id="bio" class="container">
